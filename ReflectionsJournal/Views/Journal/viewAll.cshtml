@@ -1,0 +1,11 @@
+@model ReflectionsJournal.Data.ApplicationDbContext
+
+<h1>View All Jounral Entries</h1>
+
+<div class="card-rows">
+@foreach (EntryModel entry in @Model.entries)
+{
+    <partial name = "_details" model = "@entry"/>
+
+}
+</div>

@@ -1,0 +1,20 @@
+@model ReflectionsJournal.Models.EntryModel
+
+<h1> Entry @Model.id Details</h1>
+
+<partial name = "_details" model = "@Model"/>
+
+<a asp-area="" asp-controller="Journal" asp-action="editEntryForm" asp-route-entryID = "@Model.id">
+
+<button class="btn btn-primary">Edit Entry </button>
+
+</a>
+
+<a asp-area="" asp-controller="Journal" asp-action="deleteConf" asp-route-entryID = "@Model.id">
+
+<button class="btn btn-danger">Delete Entry </button>
+
+
+</a>
+
+

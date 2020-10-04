@@ -1,0 +1,15 @@
+@model ReflectionsJournal.Models.EntryModel
+
+<div class="card text-white bg-dark mb3 " style="width: 18rem;">
+    <div class="card-body">
+    <a asp-area="" asp-controller="Journal" asp-action="entryDetails" asp-route-entryID = "@Model.id">
+    <p id = "id" class="card-title">ID: @Model.id</p></a>
+
+    
+    <p class="card-text"><p id="bold">Entry Date:</p>@Model.entryDate</p>
+
+    <p class="card-text"><p id="bold">Entry Text:</p> @Model.entryText</p>
+    <p class="card-text"><p id="bold">Confidence Level:</p> @Model.confidenceLevel</p>
+
+    </div>
+</div>

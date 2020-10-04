@@ -1,0 +1,10 @@
+@model ReflectionsJournal.Models.EntryModel
+
+<h1>Edit Entry</h1>
+
+@using(@Html.BeginForm("editEntry", "Journal"))
+{
+    <partial name = "_editForm" model = "@Model"/>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+}

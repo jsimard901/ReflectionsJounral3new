@@ -1,0 +1,10 @@
+@model ReflectionsJournal.Models.EntryModel
+
+<h1>Are you sure you want to delete entry @Model.id?</h1>
+<partial name = "_details"/>
+<a asp-action = "deleteEntry" asp-controller = "Journal" asp-route-entryID = "@Model.id">
+    <button class="btn btn-danger">Delete Entry </button>
+</a>
+<a asp-action = "viewAll" asp-controller = "Journal">
+    <button class="btn btn-primary">Back Home</button>
+</a>
