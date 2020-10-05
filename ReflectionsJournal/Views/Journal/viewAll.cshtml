@@ -2,7 +2,7 @@
 
 <h1>View All Jounral Entries</h1>
 
-<div class="card-rows">
+<div>
 @foreach (EntryModel entry in @Model.entries)
 {
     <partial name = "_details" model = "@entry"/>

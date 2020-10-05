@@ -394,3 +394,8 @@ C:\Users\student\Code_School\concepts_3\ReflectionsJounral3new\ReflectionsJourna
 C:\Users\student\Code_School\concepts_3\ReflectionsJounral3new\ReflectionsJournal\obj\Debug\netcoreapp3.1\Razor\Views\Journal\_details.cshtml.g.cs
 C:\Users\student\Code_School\concepts_3\ReflectionsJounral3new\ReflectionsJournal\obj\Debug\netcoreapp3.1\Razor\Views\Journal\_editForm.cshtml.g.cs
 C:\Users\student\Code_School\concepts_3\ReflectionsJounral3new\ReflectionsJournal\obj\Debug\netcoreapp3.1\Razor\Views\Journal\_form.cshtml.g.cs
+C:\Users\student\Code_School\concepts_3\ReflectionsJounral3new\ReflectionsJournal\bin\Debug\netcoreapp3.1\publish\web.config
+C:\Users\student\Code_School\concepts_3\ReflectionsJounral3new\ReflectionsJournal\bin\Debug\netcoreapp3.1\publish\appsettings.Development.json
+C:\Users\student\Code_School\concepts_3\ReflectionsJounral3new\ReflectionsJournal\bin\Debug\netcoreapp3.1\publish\appsettings.json
+C:\Users\student\Code_School\concepts_3\ReflectionsJounral3new\ReflectionsJournal\bin\Debug\netcoreapp3.1\publish\ReflectionsJournal.deps.json
+C:\Users\student\Code_School\concepts_3\ReflectionsJounral3new\ReflectionsJournal\bin\Debug\netcoreapp3.1\publish\ReflectionsJournal.runtimeconfig.json

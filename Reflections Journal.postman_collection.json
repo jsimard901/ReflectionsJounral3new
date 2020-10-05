@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "d7d16918-af51-4314-ace2-ceeac99bba92",
+		"name": "Reflections Journal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "View All Entries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/journal/viewall",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"journal",
+						"viewall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Entry Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/Journal/entryDetails?entryID=1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Journal",
+						"entryDetails"
+					],
+					"query": [
+						{
+							"key": "entryID",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Entry",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "entryDate",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "entryText",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "confidenceLevel",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:5001/journal/editentry",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"journal",
+						"editentry"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Entry",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "entryDate",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "entryText",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "confidenceLevel",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:5001/journal/addentry",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"journal",
+						"addentry"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Entry",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "entryID",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:5001/journal/deleteEntry",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"journal",
+						"deleteEntry"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

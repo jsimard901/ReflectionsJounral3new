@@ -72,8 +72,8 @@ namespace ReflectionsJournal.Controllers
 
         // action to edit an entry
         [HttpPost]
-        [Authorize(Roles = "admin")]
-         public IActionResult editBalance(EntryModel editEntry)
+        [Authorize(Roles = "admin, user")]
+         public IActionResult editEntry(EntryModel editEntry)
         {
             EntryModel matchingEntry = _context.entries.FirstOrDefault(e => e.id == editEntry.id);
 
@@ -102,7 +102,7 @@ namespace ReflectionsJournal.Controllers
         }
 
         // edit form  
-        [Authorize(Roles = "admin")]
+        [Authorize(Roles = "admin, user")]
          public IActionResult editEntryForm(int entryID)
         {
             EntryModel matchingEntry = _context.entries.FirstOrDefault(e => e.id == entryID);
@@ -117,7 +117,7 @@ namespace ReflectionsJournal.Controllers
                 }
         }
 
-         [Authorize(Roles = "admin")]
+         [Authorize(Roles = "admin, user")]
         public IActionResult deleteEntry(int entryID)
         {
             EntryModel thisEntry = _context.entries.FirstOrDefault(e => e.id == entryID);
@@ -134,7 +134,7 @@ namespace ReflectionsJournal.Controllers
                     return Content("No Mathcing Entry Found");
                 }
         }
-        [Authorize(Roles = "admin")]
+        [Authorize(Roles = "admin, user")]
         public IActionResult deleteConf(int entryID)
         {            
             // find entry by id

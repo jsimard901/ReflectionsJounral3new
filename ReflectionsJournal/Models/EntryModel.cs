@@ -9,11 +9,11 @@ namespace ReflectionsJournal.Models
         [Display(Name = "ID")]
         public int id {get; set;}
 
-        [Required(ErrorMessage = "Entry Date is require")]
-        [Display(Name = "Entry Date (mm/dd/yyyy")]
+        [Required(ErrorMessage = "Entry date is required")]
+        [Display(Name = "Entry Date (mm/dd/yyyy)")]
         public string entryDate {get; set;}
 
-        [Required(ErrorMessage = "Entry Text is Required")]
+        [Required(ErrorMessage = "Entry text is required")]
         [Display(Name = "Entry Text")]
         public string entryText {get; set;}
 
